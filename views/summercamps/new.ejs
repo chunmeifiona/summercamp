@@ -1,0 +1,46 @@
+<% layout('layouts/boilerplate')%>
+    <div>
+        <h1 class="text-center">New Summercamp</h1>
+        <div class="col-6 offset-3"></div>
+
+        <form action="/summercamps" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="summercamp[title]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="summercamp[location]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="image">Image</label>
+                <input class="form-control" type="text" id="image" name="summercamp[image]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="price">Price</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" id="price" name="summercamp[price]" placeholder="0.00"
+                        aria-label="price" aria-describedby="price-label">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">description</label>
+                <textarea class="form-control" type="number" id="description" name="summercamp[description]"></textarea>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary">Add Summercamp</button>
+            </div>
+        </form>
+        <a href="/summerCamps">All summercamp</a>
+    </div>

@@ -1,0 +1,83 @@
+<% layout('layouts/boilerplate')%>
+    <h1>All Summer Camps</h1>
+    <div><a href="/summercamps/new">Add Summercamp</a></div>
+    <% for(let summercamp of summercamps) {%>
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="<%=summercamp.image%>" class="card-img-top" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%=summercamp.title%>
+                        </h5>
+                        <p class="card-text">
+                            <%=summercamp.description%>
+                        </p>
+                        <a href="/summercamps/<%=summercamp._id%>" class=" btn btn-primary">Go <%=summercamp.title%></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%}%>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium a esse ex reprehenderit molestias,
+                laudantium sequi beatae expedita voluptates eveniet ipsa nisi tempora explicabo, nemo, veniam libero
+                soluta!
+                Beatae, dolore.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolorum laudantium a minima dignissimos
+                atque
+                dolore maiores, nihil molestias libero? Corporis dolorem accusantium, corrupti laborum aspernatur
+                perspiciatis
+                obcaecati modi sit.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore dicta suscipit dignissimos commodi
+                beatae,
+                exercitationem placeat, aliquam animi architecto, mollitia nostrum harum sapiente laboriosam dolores
+                vero
+                blanditiis ad culpa delectus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus accusantium aut odit culpa? Deserunt
+                adipisci qui atque reprehenderit eos ut unde, rem nam error eius quibusdam aliquid esse nisi veritatis!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere corporis, saepe magnam, ullam maxime
+                laboriosam
+                sequi repellat ex, atque modi est optio reprehenderit alias assumenda! Perferendis dolorum aliquid et
+                labore.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem pariatur rerum, quibusdam, laboriosam illo
+                culpa
+                enim tempore possimus cumque expedita perspiciatis repellat eum placeat excepturi ducimus id voluptates.
+                Doloremque, quasi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quam, magnam velit ex cumque sit dolores,
+                obcaecati sint accusantium explicabo beatae suscipit quis accusamus porro. Culpa accusantium cumque
+                tenetur
+                nisi?
+
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum ipsam nostrum, error doloribus
+                dolorum
+                neque libero perspiciatis temporibus minus molestiae non officiis itaque molestias, eligendi quis
+                explicabo illo
+                dolore?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi animi veniam, quos nihil voluptatum
+                molestias.
+                Tempora, quod? Porro totam, blanditiis ex nam, repellat, quo velit pariatur cum deleniti id maiores!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloremque voluptate, beatae
+                consequatur
+                temporibus neque aut animi! Temporibus laudantium cum cumque quasi asperiores, quas quam provident fuga,
+                error
+                optio nam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet eum! Omnis rem a perferendis
+                nemo dolor
+                voluptatum deleniti! Rem saepe deserunt temporibus veritatis officiis inventore modi esse aut aliquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error numquam unde consectetur aut quo
+                quis
+                perferendis suscipit necessitatibus aliquam non, molestias doloribus eos. Quae culpa ullam illum
+                delectus rerum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quis dolorum? Numquam natus molestias
+                animi
+                accusamus modi, fuga praesentium temporibus, corrupti, sapiente beatae quia impedit quis expedita nobis
+                sequi
+                ad!
+
+            </p>
